@@ -1,162 +1,132 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AQUEST TECH - Undangan Digital</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      background: #f9f9f9;
-      color: #333;
-    }
-
-    header {
-      background: #111;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-weight: 700;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(135deg, #d4af37, #000);
-      color: white;
-    }
-
-    .hero h2 {
-      font-size: 2.5em;
-      margin-bottom: 15px;
-    }
-
-    .container {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-    }
-
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 20px;
-    }
-
-    .card-content h3 {
-      margin-bottom: 10px;
-    }
-
-    .price {
-      color: #d4af37;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 15px;
-      background: #25D366;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #1ebe5d;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-      color: white;
-      margin-top: 40px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUET TECH - Digital Wedding Invitation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .bg-dark-gradient {
+            background: linear-gradient(135deg, #000000 0%, #0f172a 100%);
+        }
+    </style>
 </head>
-<body>
+<body class="bg-black text-gray-300">
 
-<header>
-  <h1>AQUEST TECH</h1>
-  <p>Marketplace Undangan Pernikahan Digital</p>
-</header>
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tighter text-sky-400 uppercase">AQUET TECH</a>
+            <div class="hidden md:flex space-x-8 font-medium items-center">
+                <a href="#paket" class="hover:text-sky-400 transition">Paket</a>
+                <a href="#testimoni" class="hover:text-sky-400 transition">Testimoni</a>
+                <a href="#" class="bg-sky-500 hover:bg-sky-600 text-black px-6 py-2 rounded-full font-bold transition">Order Sekarang</a>
+            </div>
+        </div>
+    </nav>
 
-<section class="hero">
-  <h2>Undangan Digital Elegan & Modern</h2>
-  <p>Buat momen pernikahanmu lebih berkesan</p>
-</section>
+    <header class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <span class="inline-block px-4 py-1 mb-4 text-sm font-semibold tracking-widest text-sky-400 uppercase border border-sky-400/30 rounded-full bg-sky-400/10">The Future of Invitation</span>
+            <h1 class="text-5xl md:text-7xl mb-6 text-white leading-tight">Rayakan Momen Berharga <br> dalam Sentuhan <span class="text-sky-400 italic">Digital</span></h1>
+            <p class="text-lg text-gray-400 mb-10 max-w-2xl mx-auto italic">"Elegan, praktis, dan abadi. Sampaikan kabar bahagia Anda ke seluruh dunia dengan satu klik."</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#paket" class="bg-sky-500 text-black px-10 py-4 rounded-xl font-bold text-lg hover:bg-sky-400 hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all">Lihat Koleksi</a>
+                <a href="#" class="bg-transparent border border-white/20 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all">Konsultasi Gratis</a>
+            </div>
+        </div>
+    </header>
 
-<div class="container">
-  <h2 style="margin-bottom:20px;">Produk Kami</h2>
-  <div class="products">
+    <section id="paket" class="py-24 bg-dark-gradient">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl text-white mb-4">Pilihan Paket Layanan</h2>
+                <div class="w-24 h-1 bg-sky-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-10">
+                <div class="bg-white/5 border border-white/10 p-10 rounded-3xl hover:border-sky-400/50 transition-all group">
+                    <h3 class="text-2xl text-white mb-2">Paket Hemat</h3>
+                    <p class="text-sky-400 text-sm mb-8">Solusi simpel dan efisien</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center text-gray-400"><span class="mr-3 text-sky-400">✓</span> Countdown Timer</li>
+                        <li class="flex items-center text-gray-400"><span class="mr-3 text-sky-400">✓</span> Navigasi Lokasi</li>
+                        <li class="flex items-center text-gray-400"><span class="mr-3 text-sky-400">✓</span> Save Moment</li>
+                    </ul>
+                    <button class="w-full py-4 rounded-xl border border-sky-400/30 text-sky-400 font-bold group-hover:bg-sky-400 group-hover:text-black transition-all">Pilih Paket</button>
+                </div>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/400x200" alt="">
-      <div class="card-content">
-        <h3>Undangan Elegant Gold</h3>
-        <p class="price">Rp 150.000</p>
-        <a href="https://wa.me/628XXXXXXXXXX" class="btn">Pesan Sekarang</a>
-      </div>
-    </div>
+                <div class="bg-sky-500/10 border-2 border-sky-400 p-10 rounded-3xl relative transform lg:-translate-y-6 shadow-[0_0_30px_rgba(56,189,248,0.1)]">
+                    <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-sky-400 text-black px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Best Seller</span>
+                    <h3 class="text-2xl text-white mb-2">Paket Medium</h3>
+                    <p class="text-sky-400 text-sm mb-8">Paling banyak dipesan</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center text-white"><span class="mr-3 text-sky-400">✓</span> RSVP Management</li>
+                        <li class="flex items-center text-white"><span class="mr-3 text-sky-400">✓</span> Audio Music</li>
+                        <li class="flex items-center text-white"><span class="mr-3 text-sky-400">✓</span> Navigasi Lokasi</li>
+                        <li class="flex items-center text-white"><span class="mr-3 text-sky-400">✓</span> Save Moment</li>
+                        <li class="flex items-center text-white"><span class="mr-3 text-sky-400">✓</span> Countdown Timer</li>
+                    </ul>
+                    <button class="w-full py-4 rounded-xl bg-sky-400 text-black font-bold hover:bg-sky-300 shadow-lg transition-all">Pesan Paket Ini</button>
+                </div>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/400x200" alt="">
-      <div class="card-content">
-        <h3>Undangan Minimalist</h3>
-        <p class="price">Rp 100.000</p>
-        <a href="https://wa.me/628XXXXXXXXXX" class="btn">Pesan Sekarang</a>
-      </div>
-    </div>
+                <div class="bg-white/5 border border-white/10 p-10 rounded-3xl hover:border-sky-400/50 transition-all group">
+                    <h3 class="text-2xl text-white mb-2">Paket Premium</h3>
+                    <p class="text-sky-400 text-sm mb-8">Layanan eksklusif tanpa batas</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center text-gray-400"><span class="mr-3 text-sky-400">✓</span> Audio Music (Custom)</li>
+                        <li class="flex items-center text-gray-400"><span class="mr-3 text-sky-400">✓</span> Navigasi Lokasi</li>
+                        <li class="flex items-center text-gray-400"><span class="mr-3 text-sky-400">✓</span> RSVP Management</li>
+                        <li class="flex items-center text-gray-400"><span class="mr-3 text-sky-400">✓</span> Save Moment</li>
+                        <li class="flex items-center text-sky-400 font-semibold"><span class="mr-3">✓</span> Support 24/7 Jam</li>
+                        <li class="flex items-center text-gray-400"><span class="mr-3 text-sky-400">✓</span> Countdown Timer</li>
+                    </ul>
+                    <button class="w-full py-4 rounded-xl border border-sky-400/30 text-sky-400 font-bold group-hover:bg-sky-400 group-hover:text-black transition-all">Pilih Paket</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/400x200" alt="">
-      <div class="card-content">
-        <h3>Undangan Floral</h3>
-        <p class="price">Rp 130.000</p>
-        <a href="https://wa.me/628XXXXXXXXXX" class="btn">Pesan Sekarang</a>
-      </div>
-    </div>
+    <section id="testimoni" class="py-24 bg-black border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl text-center text-white mb-20 italic font-light">Kisah Bahagia Bersama Kami</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center p-8 bg-white/[0.02] rounded-2xl border border-white/5">
+                    <p class="text-lg text-gray-400 mb-8 italic">"Terimakasih Kepada Aquest Responnya cepat. Puas Berlangganan"</p>
+                    <div class="w-12 h-[1px] bg-sky-500 mx-auto mb-4"></div>
+                    <h4 class="font-bold text-white tracking-widest uppercase text-sm">Galih & Medina</h4>
+                </div>
+                <div class="text-center p-8 bg-white/[0.02] rounded-2xl border border-white/5">
+                    <p class="text-lg text-gray-400 mb-8 italic">"Sangat Jossss!"</p>
+                    <div class="w-12 h-[1px] bg-sky-500 mx-auto mb-4"></div>
+                    <h4 class="font-bold text-white tracking-widest uppercase text-sm">Rizki & Yuni</h4>
+                </div>
+                <div class="text-center p-8 bg-white/[0.02] rounded-2xl border border-white/5">
+                    <p class="text-lg text-gray-400 mb-8 italic">"Moment Berharga Banget Di undangan pernikahan online nya sukses selalu AQUEST dan jajarannya"</p>
+                    <div class="w-12 h-[1px] bg-sky-500 mx-auto mb-4"></div>
+                    <h4 class="font-bold text-white tracking-widest uppercase text-sm">Alif & Windi</h4>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </div>
-</div>
-
-<footer>
-  <p>© 2026 AQUEST TECH - All Rights Reserved</p>
-</footer>
+    <footer class="bg-black py-16 border-t border-white/10">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-white text-3xl font-bold mb-4 tracking-tighter uppercase">AQUET <span class="text-sky-400 font-light">TECH</span></h2>
+            <p class="text-gray-500 mb-10 tracking-widest uppercase text-xs">Modern Digital Invitation Solution</p>
+            <div class="flex justify-center space-x-6 mb-10">
+                <a href="#" class="text-gray-500 hover:text-sky-400 transition">Instagram</a>
+                <a href="#" class="text-gray-500 hover:text-sky-400 transition">WhatsApp</a>
+                <a href="#" class="text-gray-500 hover:text-sky-400 transition">Email</a>
+            </div>
+            <div class="text-gray-600 text-sm">
+                &copy; 2026 AQUET TECH. Crafted with Elegance.
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
