@@ -56,7 +56,7 @@
                         <li class="flex items-center text-gray-400"><span class="mr-3 text-sky-400">✓</span> Navigasi Lokasi</li>
                         <li class="flex items-center text-gray-400"><span class="mr-3 text-sky-400">✓</span> Save Moment</li>
                     </ul>
-                    <button onclick="pindahHalaman()" class="w-full py-4 rounded-xl border border-sky-400/30 text-sky-400 font-bold group-hover:bg-sky-400 group-hover:text-black transition-all">Pilih Paket</button>
+                    <button onclick="paketHemat()" class="w-full py-4 rounded-xl border border-sky-400/30 text-sky-400 font-bold group-hover:bg-sky-400 group-hover:text-black transition-all">Pilih Paket</button>
                 </div>
 
                 <div class="bg-sky-500/10 border-2 border-sky-400 p-10 rounded-3xl relative transform lg:-translate-y-6 shadow-[0_0_30px_rgba(56,189,248,0.1)]">
@@ -70,7 +70,7 @@
                         <li class="flex items-center text-white"><span class="mr-3 text-sky-400">✓</span> Save Moment</li>
                         <li class="flex items-center text-white"><span class="mr-3 text-sky-400">✓</span> Countdown Timer</li>
                     </ul>
-                    <button class="w-full py-4 rounded-xl bg-sky-400 text-black font-bold hover:bg-sky-300 shadow-lg transition-all">Pesan Paket Ini</button>
+                    <button onclick="paketMedium()" class="w-full py-4 rounded-xl bg-sky-400 text-black font-bold hover:bg-sky-300 shadow-lg transition-all">Pesan Paket Ini</button>
                 </div>
 
                 <div class="bg-white/5 border border-white/10 p-10 rounded-3xl hover:border-sky-400/50 transition-all group">
@@ -84,7 +84,7 @@
                         <li class="flex items-center text-sky-400 font-semibold"><span class="mr-3">✓</span> Support 24/7 Jam</li>
                         <li class="flex items-center text-gray-400"><span class="mr-3 text-sky-400">✓</span> Countdown Timer</li>
                     </ul>
-                    <button class="w-full py-4 rounded-xl border border-sky-400/30 text-sky-400 font-bold group-hover:bg-sky-400 group-hover:text-black transition-all">Pilih Paket</button>
+                    <button onclick="paketPremium()" class="w-full py-4 rounded-xl border border-sky-400/30 text-sky-400 font-bold group-hover:bg-sky-400 group-hover:text-black transition-all">Pilih Paket</button>
                 </div>
             </div>
         </div>
@@ -154,9 +154,15 @@ EST             <h2 class="text-white text-3xl font-bold mb-4 tracking-tighter u
         </div>
     </footer>
 <script>
-    function pindahHalaman() {
+    function paketHemat() {
   // Kamu bisa tambah logika di sini
   window.location.href = "https://link.dana.id/minta?full_url=https://qr.dana.id/v1/281012092026042037292050";
+    }
+    function paketMedium() {
+        window.location.href = "https://link.dana.id/minta?full_url=https://qr.dana.id/v1/281012092026042037292050";
+    }
+    function paketPremium() {
+        window.location.href = "https://link.dana.id/minta?full_url=https://qr.dana.id/v1/281012092026042037292050";
     }
 </script>
 <script id="dsq-count-scr" src="//aquest-invitation-web.disqus.com/count.js" async></script>
