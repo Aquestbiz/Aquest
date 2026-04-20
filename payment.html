@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rincian Pembayaran</title>
+    <style>
+        /* --- RESET & DASAR --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212; /* Hitam Kebiruan Gelap */
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* --- CONTAINER UTAMA --- */
+        .payment-container {
+            background-color: #1e1e1e; /* Abu-abu sangat gelap (Kartu) */
+            width: 100%;
+            max-width: 500px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            overflow: hidden;
+            border: 1px solid #333; /* Border tipis agar elegan */
+        }
+
+        /* --- HEADER --- */
+        .payment-header {
+            background-color: #252525;
+            padding: 20px 25px;
+            border-bottom: 1px solid #333;
+            text-align: center;
+        }
+
+        .payment-header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background-color: rgba(56, 189, 248, 0.1); /* Biru muda transparan */
+            color: #38bdf8; /* Biru Muda */
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+            font-weight: bold;
+            border: 1px solid #38bdf8;
+        }
+
+        /* --- KONTEN RINCIAN --- */
+        .payment-body {
+            padding: 25px;
+        }
+
+        .section-title {
+            color: #a0a0a0;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Item Rincian (Flexbox) */
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .detail-label {
+            color: #aaaaaa; /* Abu-abu untuk label */
+        }
+
+        .detail-value {
+            color: #ffffff; /* Putih untuk nilai */
+            font-weight: 500;
+            text-align: right;
+        }
+
+        /* Khusus ID Transaksi (bisa diklik/salin) */
+        .order-id {
+            color: #38bdf8;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /* Garis Pemisah */
+        .divider {
+            height: 1px;
+            background-color: #333;
+            margin: 20px 0;
+        }
+
+        /* --- TOTAL --- */
+        .total-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #252525;
+            border-radius: 8px;
+        }
+
+        .total-label {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .total-amount {
+            font-size: 1.6rem;
+            color: #38bdf8; /* Biru Muda Menonjol */
+            font-weight: 800;
+        }
+
+        /* --- FOOTER / TOMBOL --- */
+        .payment-footer {
+            padding: 0 25px 25px 25px;
+        }
+
+        .btn-pay {
+            display: block;
+            width: 100%;
+            background-color: #38bdf8; /* Biru Muda */
+            color: #121212; /* Teks Hitam agar kontras */
+            border: none;
+            padding: 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-pay:hover {
+            background-color: #0ea5e9; /* Biru sedikit lebih gelap saat hover */
+            transform: translateY(-2px);
+        }
+
+        .btn-back {
+            display: block;
+            text-align: center;
+            color: #a0a0a0;
+            text-decoration: none;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        .btn-back:hover {
+            color: #ffffff;
+        }
+
+        /* RESPONSIVE (HP Kecil) */
+        @media (max-width: 400px) {
+            .payment-header h1 { font-size: 1.2rem; }
+            .total-amount { font-size: 1.3rem; }
+            .payment-body { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="payment-container">
+        <div class="payment-header">
+            <h1>Rincian Pembayaran</h1>
+            <div class="status-badge">Menunggu Pembayaran</div>
+        </div>
+
+        <div class="payment-body">
+            <h2 class="section-title">Informasi Pesanan</h2>
+            
+            <div class="detail-item">
+                <span class="detail-label">ID Transaksi</span>
+                <span class="detail-value order-id">#TSM25042002</span>
+            </div>
+            
+            <div class="detail-item">
+                <span class="detail-label">Metode Pembayaran</span>
+                <span class="detail-value">DANA Virtual</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <h2 class="section-title">Rincian Biaya</h2>
+
+            <div class="detail-item">
+                <span class="detail-label"> Paket Hemat</span>
+                <span class="detail-value">Rp 65.000</span>
+            </div>
+            
+            <div class="detail-item">
+                <span class="detail-label">Biaya Layanan</span>
+                <span class="detail-value">Rp 0</span>
+            </div>
+
+            <div class="total-section">
+                <span class="total-label">Total Bayar</span>
+                <span class="total-amount">Rp 65.000</span>
+            </div>
+        </div>
+
+        <div class="payment-footer">
+            <a href="#" class="btn-pay">Bayar Sekarang</a>
+            <a href="https://aquestbiz.github.io/Aquest/#paket" class="btn-back">Kembali ke Beranda</a>
+        </div>
+    </div>
+
+</body>
+</html>
